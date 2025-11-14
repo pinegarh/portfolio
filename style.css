@@ -1,0 +1,208 @@
+/* Basic Setup & Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* For smooth scrolling between sections */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Consistent Color Scheme [cite: 13] */
+:root {
+    --primary-color: #0056b3; /* A professional blue */
+    --secondary-color: #333;
+    --light-color: #f4f4f4;
+    --dark-color: #222;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--secondary-color);
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed; /* Sticky navigation */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+}
+
+header nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    margin-top: 70px; /* Offset for fixed header */
+}
+
+section:nth-child(even) {
+    background: #fff; /* Alternating section colors */
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    min-height: 400px;
+    padding-top: 120px;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Call-to-Action Button Style */
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #003d82; /* Darker blue on hover */
+}
+
+/* About Me Section */
+#about .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    float: left;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+#about p {
+    font-size: 1.1em;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.education, .skills-list {
+    width: 45%;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+#contact {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-links li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
